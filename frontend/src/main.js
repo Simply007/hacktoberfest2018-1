@@ -9,7 +9,7 @@ import store from "./store/store";
 
 Vue.config.productionTip = false;
 
-const socket = io("https://hacktoberfestffm.de");
+const socket = io("https://hacktoberfest-event-brno-2018.herokuapp.com");
 
 socket.on("database update", function(data) {
   store.dispatch("api/UPDATE_USERS", data);
