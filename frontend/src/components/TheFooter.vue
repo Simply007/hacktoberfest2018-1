@@ -11,7 +11,7 @@
         class="footer-link" 
         href="https://www.kentico.com/hacktoberfest-event-brno-2018">Event site</a>
     </div>
-    <div class="bottom-line"><p>Special thanks to all organizators of the <a  href="https://hacktoberfestffm.de">Hacktoberfest Event 2018 in Frankfurt</a>
+    <div id="thanks" class="bottom-line"><p>Special thanks to all organizators of the <a  href="https://hacktoberfestffm.de">Hacktoberfest Event 2018 in Frankfurt</a>
     That have held a great Hacktoberfest Event.</p><p>Mainly <a href="https://twitter.com/flxwu">Felix Wu</a> and <a href="https://twitter.com/vicbergquist">Victoria Bergquist</a>.</p>
     I have forked their <a href="https://github.com/cssfrankfurt/hacktoberfest2018">the source code</a> of Hacktoberfest Event Frenkfurt site site to use it fot this site.
     </div>
