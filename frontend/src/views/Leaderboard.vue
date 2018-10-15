@@ -2,7 +2,7 @@
   <section class="section section-leaderboard">
     <div class="leaderboard-stats">
       <img 
-        src="/hacktoberfest_title.svg" 
+        src="/hacktoberfest_title.png" 
         alt="hacktoberfest" 
         class="leaderboard-header">
       <ul class="list list-stats">
@@ -15,7 +15,9 @@
         </li>
       </ul>
       <div class="join-us">
-        <p>Remember to signup for the official hacktoberfest challenge <a class="inline-link" href="https://hacktoberfest.digitalocean.com">here!</a></p>
+        <p>Remember to signup for the official hacktoberfest challenge <a 
+          class="inline-link" 
+          href="https://hacktoberfest.digitalocean.com">here!</a></p>
         <p>Want to track your progress live at our event?</p>
         <button 
           tabindex="0" 
@@ -149,12 +151,13 @@ export default {
 
   .leaderboard-header
     max-height: 8rem
+    width: 80%
 
   .join-us
     padding-top: 1rem
 
   .leaderboard-stats
-    padding-bottom: 1.5rem
+    padding-bottom: 3rem
     text-align: center
 
   #leaderboard-table

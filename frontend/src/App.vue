@@ -76,6 +76,7 @@ export default {
   article
     flex-basis: 50%
     padding: 1rem 1rem
+    width: 100%
 
   button
     color: white

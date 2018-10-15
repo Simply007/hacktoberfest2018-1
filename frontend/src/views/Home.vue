@@ -3,24 +3,24 @@
     <div class="main-img">
       <img 
         class="hacktoberfest-img" 
-        src="/hacktoberfest.svg" 
-        alt="Hacktoberfest Frankfurt">
+        src="/hacktoberfest.png" 
+        alt="Hacktoberfest Brno">
     </div>
-    <ul class="list list-stats">
-      <li 
-        v-for="stat in stats"
-        :key="stat.index" 
-        class="list-item">
-        <div class="stat-number">{{ stat.number }}</div>
-        <div class="stat-name">{{ stat.name }}</div>
-      </li>
-    </ul>
-    <article class="article article-community">
-      <h2 class="sponsor-heading">Participating communities</h2>
-      <list-component 
-        :items="communities" 
-        :item-type="'community'" 
-        class="community-list"/>
+    <article>
+      Hacktoberfest — brought to you by DigitalOcean in partnership with GitHub and Twilio — is a month-long celebration of open source software. Maintainers are invited to guide would-be contributors towards issues that will help move the project forward, and contributors get the opportunity to give back to both projects they like, and ones they've just discovered. No contribution is too small—bug fixes and documentation updates are valid ways of participating.
+    </article>
+    <article>
+      <h1>Agenda</h1>
+      <ul class="agenda">
+        <li>17:30 Doors open</li>
+        <li>18:00 Talk 1: Open-source intro</li>
+        <li>18:20 Talk 2: What we use open source for in Kentico</li>
+        <li>18:40 Talk 3: What is Hacktoberfest</li>
+        <li>19:30 HACKING TIME &amp; Networking &amp; Beer</li>
+        <li>22:00 We are going home</li>
+      </ul>
+    </article>
+    <article>
       <h2 class="sponsor-heading">Sponsored by</h2>
       <list-component 
         :items="sponsors" 
@@ -41,41 +41,6 @@ export default {
   data: () => ({
     sponsors: [
       {
-        name: "melsicon",
-        url: "https://melsicon.de",
-        img: "./sponsors/melsicon.svg"
-      },
-      {
-        name: "rocketloop",
-        url: "https://rocketloop.de",
-        img: "./sponsors/rocketloop.svg"
-      },
-      {
-        name: "mindspace",
-        url: "https://mindspace.me",
-        img: "./sponsors/mindspace.svg"
-      },
-      {
-        name: "msg",
-        url: "https://msg.group",
-        img: "./sponsors/msg.svg"
-      },
-      {
-        name: "codemonauts",
-        url: "https://codemonauts.com",
-        img: "./sponsors/codemonauts.svg"
-      },
-      {
-        name: "uib GmbH",
-        url: "https://uib.de",
-        img: "./sponsors/uib.svg"
-      },
-      {
-        name: "quokkajs",
-        url: "https://quokkajs.com",
-        img: "./sponsors/quokkajs.svg"
-      },
-      {
         name: "DigitalOcean",
         url: "https://digitalocean.com",
         img: "./sponsors/digitalocean.svg"
@@ -90,73 +55,8 @@ export default {
         url: "https://twilio.com",
         img: "./sponsors/twilio.svg"
       }
-    ],
-    communities: [
-      {
-        name: "Angular Frankfurt",
-        url: "https://www.meetup.com/Angular-Frankfurt/"
-      },
-      {
-        name: "ASP.NET Core Rhein Main",
-        url: "https://www.meetup.com/NET-Core-Rhein-Main/"
-      },
-      {
-        name: "Code Review",
-        url: "https://www.meetup.com/code-review/"
-      },
-      {
-        name: "CSS Frankfurt",
-        url: "https://cssfrankfurt.de"
-      },
-      {
-        name: "Elixir Meetup Rhein Main",
-        url: "https://www.meetup.com/Elixir-Meetup-Rhein-Main/"
-      },
-      {
-        name: "Frankfurt Data Science",
-        url: "https://www.meetup.com/FrankfurtDataScience/"
-      },
-      {
-        name: "Frontend RheinMain",
-        url: "https://www.meetup.com/frontend_rm/"
-      },
-      {
-        name: "GDG Rhein Main",
-        url: "https://www.meetup.com/gdgrheinmain/"
-      },
-      {
-        name: "Vue.js Frankfurt",
-        url: "https://meetup.com/vuejsfrankfurt"
-      },
-      {
-        name: "Techettes Frankfurt",
-        url: "https://www.meetup.com/Techettes/"
-      },
-      {
-        name: "Women Techmakers Rhein-Main",
-        url: "https://www.meetup.com/Women-Techmakers-Frankfurt_Rhein-Main/"
-      }
     ]
   }),
-  computed: {
-    stats() {
-      const statsArray = [
-        {
-          name: "Communities",
-          number: "10+"
-        },
-        {
-          name: "Participants",
-          number: "140+"
-        },
-        {
-          name: "Sponsors",
-          number: this.sponsors.length
-        }
-      ];
-      return statsArray;
-    }
-  },
   methods: {
     ...mapActions({
       login: "login/login"
@@ -166,7 +66,6 @@ export default {
 </script>
 
 <style lang="sass">
-
   .section-home
     min-height: 100vh
 
@@ -178,6 +77,15 @@ export default {
 
   .hacktoberfest-img
     width: 100%
+
+  article
+    flex-basis: 100%
+    padding-bottom: .5rem
+    max-width: 700px
+    margin: 0 auto
+
+    ul.agenda
+      margin: 2em
 
   .list-stats
     flex-basis: 100%
@@ -202,11 +110,9 @@ export default {
     letter-spacing: 1px
     opacity: .7
 
-  .sponsor-heading
-    text-transform: uppercase
-    font-size: .9rem
-    text-align: center
-    letter-spacing: 1px
-    color: $color-secondary
-
+    h1
+      text-align: center
+      font-size: 2em
+      margin: 1em
+      
 </style>

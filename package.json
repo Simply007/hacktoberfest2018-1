@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "DEBUG=hacktoberfest2018:* node ./bin/www",
+    "dev-local": "cross-env DEBUG=hacktoberfest2018:* node ./bin/www",
     "dev": "DEBUG=hacktoberfest2018:* nodemon ./bin/www",
     "format": "prettier-eslint --write \"**/*.js\"",
     "lint": "prettier-eslint -l error --list-different \"**/*.js\"",
@@ -16,8 +17,8 @@
     }
   },
   "engines": {
-    "node": "8.11.4",
-    "yarn": "1.9.4"
+    "node": "^8.11.1",
+    "yarn": "^1.9.4"
   },
   "dependencies": {
     "@octokit/rest": "^15.13.0",
@@ -34,7 +35,8 @@
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
-    "eslint": "^5.6.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.7.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
