@@ -6,6 +6,13 @@
         src="/hacktoberfest_small.svg" 
         alt="Hacktoberfest">
     </router-link>
+    <router-link 
+      to="/" 
+      class="logo">
+      <img 
+        src="/kentico-logo.svg" 
+        alt="Kentico logo">
+    </router-link>
     <div class="nav-wrapper primary">
       <router-link 
         v-for="route in $router.options.routes"
@@ -30,6 +37,10 @@
     background: $color-primary
     @media screen and (max-width: 320px)
       padding: 0
+
+    .logo img
+      width: 5em
+      margin-left: 1em
 
   .nav-wrapper
     display: flex
