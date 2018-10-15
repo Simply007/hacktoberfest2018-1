@@ -1,6 +1,6 @@
 # Hacktoberfest Brno 2018 Website
 
-This is the official website for the Hacktoberfest Frankfurt Event on the 18th Oct 2018.
+This is the official website for the Hacktoberfest Brno Event on the 18th Oct 2018.
 
 
 ## Running frontend locally with official back-end
