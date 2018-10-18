@@ -78,7 +78,7 @@ export default {
       },
       {
         title: "Sample repository for beginners",
-        description: "Create the pull request of your choce",
+        description: "Create your html github profile page!",
         url: "https://github.com/Kentico/hacktoberfest-event-brno-2018"
       }
     ],
