@@ -101,6 +101,11 @@ export default {
         description: "A collection of guides to programming"
       },
       {
+        title: "hasura/graphql-engine",
+        description:
+          "Instant realtime GraphQL APIs on Postgres with access control"
+      },
+      {
         title: "30-seconds/30-seconds-of-code",
         description:
           "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less"

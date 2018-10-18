@@ -3,7 +3,7 @@
 This is the official website for the Hacktoberfest Brno Event on the 18th Oct 2018.
 
 
-## Running frontend locally with official back-end
+## Running frontend (non-compiled) locally with official back-end
 
 Install the dependencies
 ```
@@ -15,7 +15,7 @@ Run FrontEnd on port 8080
 cd frontend/ && yarn serve
 ```
 
-## Running back-end + frontend locally
+## Running back-end (development) + (compiled) frontend locally
 
 Install the dependencies
 ```
