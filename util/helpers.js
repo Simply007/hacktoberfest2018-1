@@ -15,7 +15,7 @@ const paginate = async (octokit, method, username) => {
     response = await octokit.getNextPage(response);
     if (
       new Date(response.data[response.data.length - 1].created_at) <
-      new Date('2018-10-18')
+      new Date('2018-10-01')
     ) {
       data = data.concat(response.data);
       break;
