@@ -7,6 +7,7 @@
         alt="Hacktoberfest Brno">
     </div>
     <article>
+      <h1>What is Hacktoberfest?</h1>
       Hacktoberfest — brought to you by DigitalOcean in partnership with GitHub and Twilio — is a month-long celebration of open source software. Maintainers are invited to guide would-be contributors towards issues that will help move the project forward, and contributors get the opportunity to give back to both projects they like, and ones they've just discovered. No contribution is too small—bug fixes and documentation updates are valid ways of participating.
     </article>
     <article 
@@ -15,7 +16,11 @@
       <a href="https://www.kentico.com/hacktoberfest-event-brno-2018?utm_campaign=f_hacktoberfest-event-brno-2018&utm_source=leaderboard"><button>Register for Event!</button></a>
     </article>
     <article>
-      <h1>Agenda</h1>
+      <h1>Hacktoberfest event Brno 2018</h1>
+      <p>
+        Since we in Kentico love open-source, especially <a href="https://kentico.github.io">Developer Community Team</a>. We decided to organize Hacktoberfest Event in Brno - the first event in the Czech Republic! In the following agenda, you could see what we were doing on 18th of October. You could also take a look at the <router-link to="/resources">resources</router-link> we have prepared to facilitate picking an issue as much as possible!
+      </p>
+      <h2>Agenda</h2>
       <ul class="agenda">
         <li>17:30 Doors open</li>
         <li>18:00 Talk 1: Open-source intro</li>
@@ -24,6 +29,10 @@
         <li>19:30 HACKING TIME &amp; Networking &amp; Beer</li>
         <li>22:00 We are going home</li>
       </ul>
+    </article>
+    <article>
+      <h1>What's next?!</h1>
+      That was not enough for us - we have decided to prolong our initiative for the whole of October. So you could <router-link to="/leaderboard">register</router-link> to the Brno Hacktoberfest, pick an issue from <router-link to="/resources">resources</router-link> and climb in the leaderboard!
     </article>
     <article>
       <h2 class="sponsor-heading">Sponsored by</h2>
@@ -91,6 +100,11 @@ export default {
 
     ul.agenda
       margin: 2em
+    a
+      color: $color-secondary
+      margin: auto;
+      &:hover
+        border-bottom: 1px solid $color-cyan
 
   .list-stats
     flex-basis: 100%

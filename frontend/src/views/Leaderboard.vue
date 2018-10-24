@@ -18,7 +18,7 @@
         <p>Remember to signup for the official hacktoberfest challenge <a 
           class="inline-link" 
           href="https://hacktoberfest.digitalocean.com">here!</a></p>
-        <p>Want to track your progress live at our event?</p>
+        <p>Want to track your progress live?</p>
         <button 
           tabindex="0" 
           @click="login"> Join us </button>

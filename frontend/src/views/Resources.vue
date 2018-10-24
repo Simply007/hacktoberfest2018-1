@@ -77,8 +77,10 @@ export default {
       },
       {
         title: "Kentico Cloud most starred repositories!",
-        description: "Create a unit test, use gramarly on readme/documentation, or refactor a part of the logic!",
-        url: "https://github.com/search?o=desc&q=topic%3Akentico-cloud+org%3AKentico+fork%3Atrue&s=stars&type=Repositories"
+        description:
+          "Create a unit test, use gramarly on readme/documentation, or refactor a part of the logic!",
+        url:
+          "https://github.com/search?o=desc&q=topic%3Akentico-cloud+org%3AKentico+fork%3Atrue&s=stars&type=Repositories"
       },
       {
         title: "Kentico Hacktobest Issues",
